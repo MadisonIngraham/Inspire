@@ -1,7 +1,9 @@
 import Weather from './models/weather.js'
+import Quote from './models/quote.js'
 
 let _state = {
   weather: {},
+  quote: {},
   todos: [] // TODO change 'any' to your todo model
 }
 
@@ -10,6 +12,7 @@ let _state = {
  */
 let _listeners = {
   weather: [],
+  quote: [],
   todos: []
 }
 
