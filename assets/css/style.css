@@ -1,4 +1,25 @@
-#todo-error{
+#todo-error {
   color: red;
   font-size: 2em;
+}
+
+#quote {
+  font-size: 8pt;
+}
+
+#bg-image {
+  background-image: url("https://wallpaperplay.com/walls/full/5/4/6/124726.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#weather-text {
+  font-size: 6pt;
+}
+
+#weather-number {
+  font-size: 13pt;
+  margin-bottom: 0px;
+  padding-top: 5px;
 }

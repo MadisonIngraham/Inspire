@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inspire</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Inspire</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-<body id="bg-image">
-	<div id="weather">
-		Your Weather Template
-	</div>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-	<div id="quote">
-		The Quote
-	</div>
+  <body id="bg-image" class="container-fluid">
+    <div class="row d-flex justify-content-end">
+      <div class="col-1 text-center" id="weather"></div>
+    </div>
 
-	<div>
-		A Todo List
-		<div id="todo-error"></div>
-		<form onsubmit=""></form>
-		<div id="todos"></div>
-	</div>
+    <div class="row m-2">
+      <div class="col-4">
+        <div>
+          A Todo List
+          <div id="todo-error"></div>
+          <form onsubmit=""></form>
+          <div id="todos"></div>
+        </div>
+      </div>
+    </div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
-	<script type="module" src="app/main.js"></script>
-</body>
+    <div class="row d-flex justify-content-center m-2">
+      <div class="col-10">
+        <div id="quote">
+          <p>
+            The Quote: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Obcaecati omnis eligendi sed nihil veniam natus quas laudantium?
+            Earum non veritatis, iste voluptatem deserunt quam accusantium
+            provident quis repellendus nobis vel!
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script type="module" src="app/main.js"></script>
+  </body>
 </html>
-<html>
+<html></html>
