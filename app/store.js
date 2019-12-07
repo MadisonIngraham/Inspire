@@ -1,9 +1,11 @@
 import Weather from './models/weather.js'
 import Quote from './models/quote.js'
+import Image from './models/image.js'
 
 let _state = {
   weather: {},
   quote: {},
+  image: {},
   todos: [] // TODO change 'any' to your todo model
 }
 
@@ -13,6 +15,7 @@ let _state = {
 let _listeners = {
   weather: [],
   quote: [],
+  image: [],
   todos: []
 }
 
