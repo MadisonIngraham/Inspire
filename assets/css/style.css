@@ -4,22 +4,21 @@
 }
 
 #quote {
-  font-size: 10pt;
+  font-size: 12pt;
 }
 
 #bg-image {
-  background-image: url("https://wallpaperplay.com/walls/full/5/4/6/124726.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 #weather-text {
-  font-size: 7pt;
+  font-size: 10pt;
 }
 
 #weather-number {
-  font-size: 13pt;
+  font-size: 15pt;
   margin-bottom: 0px;
   padding-top: 5px;
 }
