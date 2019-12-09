@@ -6,9 +6,9 @@ export default class Todo {
 
   get Template() {
     return `
-    <ol>
-              <li>${this.description}</li>
-            </ol>
+   
+    <li>${this.description} <b>x</b> </li> 
+
     `;
   }
 }

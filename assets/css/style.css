@@ -36,3 +36,7 @@ html {
   position: absolute;
   top: 27vh;
 }
+
+b {
+  color: red;
+}
