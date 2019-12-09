@@ -1,13 +1,13 @@
 export default class Todo {
   constructor(data) {
-    this.id = data.id;
-    this.name = data.name;
+    this._id = data._id;
+    this.description = data.description;
   }
 
   get Template() {
     return `
     <ol>
-              <li>${this.name}</li>
+              <li>${this.description}</li>
             </ol>
     `;
   }
