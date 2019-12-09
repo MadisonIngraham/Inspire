@@ -14,11 +14,11 @@
 }
 
 #weather-text {
-  font-size: 10pt;
+  font-size: 9pt;
 }
 
 #weather-number {
-  font-size: 15pt;
+  font-size: 17pt;
   margin-bottom: 0px;
   padding-top: 5px;
 }
@@ -30,4 +30,9 @@ html {
 
 #quote-row {
   bottom: 0;
+}
+
+#list {
+  position: absolute;
+  top: 27vh;
 }

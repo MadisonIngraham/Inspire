@@ -3,10 +3,4 @@ export default class Image {
     this.id = data.id;
     this.url = data.url;
   }
-
-  get Template() {
-    return `
-
-    `;
-  }
 }

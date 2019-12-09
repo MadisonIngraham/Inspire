@@ -1,13 +1,14 @@
-import Weather from './models/weather.js'
-import Quote from './models/quote.js'
-import Image from './models/image.js'
+import Weather from "./models/weather.js";
+import Quote from "./models/quote.js";
+import Image from "./models/image.js";
+import Todo from "./models/todo.js";
 
 let _state = {
   weather: {},
   quote: {},
   image: {},
-  todos: [] // TODO change 'any' to your todo model
-}
+  todos: [],
+};
 
 /** Collection of listeners to be called based on keyed state changes
  * @type {{[x:string]: function[]}}
@@ -16,18 +17,18 @@ let _listeners = {
   weather: [],
   quote: [],
   image: [],
-  todos: []
-}
+  todos: [],
+};
 
 /**
  * Validates the property string is defined in both the state and the listeners
  * @param {string} prop
  */
-function _validateProp (prop) {
+function _validateProp(prop) {
   if (!_state.hasOwnProperty(prop) || !Array.isArray(_listeners[prop])) {
     throw new Error(
       `Unable to subscribe to ${prop}, please check your state and your listeners`
-    )
+    );
   }
 }
 
@@ -36,9 +37,9 @@ function _validateProp (prop) {
  * @param {function} fn
  * @param {string} prop
  */
-function _validateSubscriber (fn, prop) {
-  if (typeof fn !== 'function') {
-    throw new Error(`Unable to subscribe to ${prop} fn must be a function`)
+function _validateSubscriber(fn, prop) {
+  if (typeof fn !== "function") {
+    throw new Error(`Unable to subscribe to ${prop} fn must be a function`);
   }
 }
 
@@ -46,18 +47,18 @@ class Store {
   /**
    * Provides access to application state data
    */
-  get State () {
-    return _state
+  get State() {
+    return _state;
   }
   /**
    * Takes in a property to observe, and a function to run when it changes
    * @param {string} prop
    * @param {function} fn
    */
-  subscribe (prop, fn) {
-    _validateProp(prop)
-    _validateSubscriber(fn, prop)
-    _listeners[prop].push(fn)
+  subscribe(prop, fn) {
+    _validateProp(prop);
+    _validateSubscriber(fn, prop);
+    _listeners[prop].push(fn);
   }
 
   /**
@@ -65,12 +66,12 @@ class Store {
    * @param {string} prop
    * @param {any} data
    */
-  commit (prop, data) {
-    _validateProp(prop)
-    _state[prop] = data
-    _listeners[prop].forEach(fn => fn())
+  commit(prop, data) {
+    _validateProp(prop);
+    _state[prop] = data;
+    _listeners[prop].forEach(fn => fn());
   }
 }
 
-const store = new Store()
-export default store
+const store = new Store();
+export default store;
